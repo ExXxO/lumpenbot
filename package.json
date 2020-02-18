@@ -1,0 +1,15 @@
+{
+  "name": "lumpenbot",
+  "version": "1.0.0",
+  "description": "a bot for sending replies on IRC triggered by keywords",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "astreonch",
+  "license": "ISC",
+  "dependencies": {
+    "irc": "^0.4.0",
+    "lodash": "^4.17.15"
+  }
+}
