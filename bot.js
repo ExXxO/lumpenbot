@@ -14,8 +14,9 @@ var observer = require('./modules/observer.js');
 var client = new irc.Client(config.server, config.userName, config);
 
 // Check when registred to IRC server
-client.addListener("registred", function() {
-	console.log("Bot is now registered with the server "+config.server);
+client.addListener("registered", function() {
+    console.log("Bot is now registered with the server " + config.server);
+    client.say(config.channels, '/me ist nun ein aufmerksamer Zuschauer xD');
 });
 
 // Error handler
