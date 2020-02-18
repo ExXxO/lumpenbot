@@ -1,0 +1,12 @@
+[Unit]
+Description=this is a simple irc bot for lumpenjunge
+After=network.target
+
+[Service]
+WorkingDirectory=/home/bot/
+User=bot
+ExecStart=/usr/bin/node bot.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
