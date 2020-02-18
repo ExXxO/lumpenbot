@@ -1,14 +1,16 @@
 module.exports = function (client, from, to, text, message) {
 
     var lowerCasedText = text.toLowerCase();
+
+    //lowercase only
     var observerWords = [
-        'ehre',
+        'wenschwarm and added',
     ]
 
     if (new RegExp(observerWords.join("|")).test(lowerCasedText)) {
 
         var observerTexts = [
-            'lumpenLove',
+            '!hype',
         ];
 
         // If u wanna mention the user
