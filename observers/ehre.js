@@ -5,6 +5,7 @@ module.exports = function (client, from, to, text, message) {
     //lowercase only
     var observerWords = [
         'wenschwarm and added',
+        'bleibt teil des m',
     ]
 
     if (new RegExp(observerWords.join("|")).test(lowerCasedText)) {
