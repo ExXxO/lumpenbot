@@ -3,7 +3,8 @@ var isChannel = require('./is-channel.js');
 
 module.exports = function (client, from, to, text, message) {
 
-    if (text && text.length > 2 && text[0] != '!') {
+    // removed: && text[0] != '!' (can also be triggered on commands)
+    if (text && text.length > 2) {
         var sendTo = from; // send privately
         if (isChannel(to)) {
             sendTo = to; // send publicly
